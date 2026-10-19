@@ -6,9 +6,19 @@ variables:
 
 test:
   stage: test
-  image: node:24-bookworm
   rules:
     - if: $CI_COMMIT_BRANCH == "dev"
+  before_script:
+    - |
+      export NVM_DIR="$HOME/.nvm"
+      if [ ! -s "$NVM_DIR/nvm.sh" ]; then
+        curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+      fi
+      . "$NVM_DIR/nvm.sh"
+      nvm install 24
+      nvm use 24
+      node -v
+      npm -v
   script:
     - npm ci
     - npm run lint
