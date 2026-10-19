@@ -37,8 +37,7 @@ useHead({
             <h3>Профессиональная ориентация через практику</h3>
             <p>
               Создание базовых кафедр на предприятиях (например, ПАО
-              «Роствертол»), внутривузовские и международные олимпиады по
-              учету.
+              «Роствертол»), внутривузовские и международные олимпиады по учету.
             </p>
           </div>
         </article>
@@ -62,7 +61,9 @@ useHead({
       </div>
     </section>
     <div class="actions">
-      <NuxtLink class="button dark" to="/programs">Программы обучения ↗</NuxtLink>
+      <NuxtLink class="button dark" to="/programs"
+        >Программы обучения ↗</NuxtLink
+      >
       <NuxtLink class="button dark" to="/contacts">
         Связаться с кафедрой ↗
       </NuxtLink>

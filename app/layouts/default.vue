@@ -1,10 +1,12 @@
 <template>
-  <a class="skip" href="#main">Перейти к содержанию</a>
-  <AppHeader />
-  <main id="main">
-    <slot />
-  </main>
-  <AppFooter />
+  <div>
+    <a class="skip" href="#main">Перейти к содержанию</a>
+    <AppHeader />
+    <main id="main">
+      <slot />
+    </main>
+    <AppFooter />
+  </div>
 </template>
 
 <script setup lang="ts">

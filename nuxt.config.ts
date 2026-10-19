@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2026-10-19",
+  modules: ["@nuxt/eslint"],
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   app: {
