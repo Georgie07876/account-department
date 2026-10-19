@@ -3,7 +3,7 @@ useHead({ title: "Проектно-образовательный интенси
 </script>
 
 <template>
-  <div class="wrap narrow">
+  <div class="container container--narrow">
     <div class="page-intro">
       <h1>Проектно-образовательный интенсив</h1>
     </div>

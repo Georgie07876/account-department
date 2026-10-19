@@ -20,7 +20,7 @@ watch(
 
 <template>
   <div class="utility">
-    <div class="wrap">
+    <div class="container">
       <span>{{ site.university }}</span>
       <div>
         <a :href="site.universityUrl">Сайт университета ↗</a>
@@ -35,20 +35,20 @@ watch(
     </div>
   </div>
   <header>
-    <div class="wrap masthead">
-      <NuxtLink class="brand" to="/">
+    <div class="container header__bar">
+      <NuxtLink class="header__brand" to="/">
         <img src="/assets/logo.jpeg" alt="Эмблема РГЭУ (РИНХ)" />
         <span>
           РГЭУ <b>(РИНХ)</b>
           <small>{{ site.faculty }}</small>
         </span>
       </NuxtLink>
-      <div class="header-contact">
+      <div class="header__contact">
         <a :href="site.phoneHref">{{ site.phone }}</a>
         <small>{{ site.address }}</small>
       </div>
       <button
-        class="menu-button"
+        class="header__menu"
         type="button"
         :aria-expanded="menuOpen"
         aria-controls="navigation"
@@ -59,15 +59,15 @@ watch(
     </div>
     <nav
       id="navigation"
-      :class="{ 'is-open': menuOpen }"
+      :class="{ 'nav--open': menuOpen }"
       aria-label="Основная навигация"
     >
-      <div class="wrap nav-inner">
+      <div class="container nav__list">
         <NuxtLink
           v-for="item in nav"
           :key="item.to"
           :to="item.to"
-          :class="{ 'anniversary-nav': item.anniversary }"
+          :class="{ 'nav__link--anniversary': item.anniversary }"
           :aria-current="isCurrent(item.to) ? 'page' : undefined"
         >
           {{ item.label }}

@@ -14,7 +14,7 @@ const largeText = useState("large-text", () => false);
 
 useHead({
   bodyAttrs: {
-    class: computed(() => (largeText.value ? "large-text" : "")),
+    class: computed(() => (largeText.value ? "page--large-text" : "")),
   },
 });
 </script>
