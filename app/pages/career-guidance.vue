@@ -1,7 +1,5 @@
 <script setup lang="ts">
-useHead({
-  title: "Профориентационная работа кафедры",
-});
+useHead({ title: "Профориентационная работа кафедры" });
 </script>
 
 <template>
@@ -53,9 +51,9 @@ useHead({
               Получение выпускниками профессиональных аттестатов связано с
               выполнением требований ИПБ России.
             </p>
-            <NuxtLink class="text-link" to="/programs#accreditation">
-              Сведения об аккредитации ↗
-            </NuxtLink>
+            <NuxtLink class="text-link" to="/programs#accreditation"
+              >Сведения об аккредитации ↗</NuxtLink
+            >
           </div>
         </article>
       </div>
@@ -63,10 +61,9 @@ useHead({
     <div class="actions">
       <NuxtLink class="button button--dark" to="/programs"
         >Программы обучения ↗</NuxtLink
+      ><NuxtLink class="button button--dark" to="/contacts"
+        >Связаться с кафедрой ↗</NuxtLink
       >
-      <NuxtLink class="button button--dark" to="/contacts">
-        Связаться с кафедрой ↗
-      </NuxtLink>
     </div>
   </div>
 </template>
