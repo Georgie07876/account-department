@@ -5,18 +5,18 @@ useHead({
 </script>
 
 <template>
-  <div class="wrap narrow">
+  <div class="container container--narrow">
     <div class="page-intro">
       <p class="eyebrow">Абитуриентам · пункт 7</p>
       <h1>Профориентационная работа кафедры</h1>
-      <p class="lead">
+      <p class="page-intro__lead">
         Цель работы — привлечение мотивированных абитуриентов и помощь в
         осознанном выборе профессий в сфере учета, аудита и контроллинга.
       </p>
     </div>
     <section class="section">
       <h2>Основные направления деятельности</h2>
-      <div class="guidance-items">
+      <div class="guidance">
         <article>
           <span>01</span>
           <div>
@@ -37,8 +37,7 @@ useHead({
             <h3>Профессиональная ориентация через практику</h3>
             <p>
               Создание базовых кафедр на предприятиях (например, ПАО
-              «Роствертол»), внутривузовские и международные олимпиады по
-              учету.
+              «Роствертол»), внутривузовские и международные олимпиады по учету.
             </p>
           </div>
         </article>
@@ -62,8 +61,10 @@ useHead({
       </div>
     </section>
     <div class="actions">
-      <NuxtLink class="button dark" to="/programs">Программы обучения ↗</NuxtLink>
-      <NuxtLink class="button dark" to="/contacts">
+      <NuxtLink class="button button--dark" to="/programs"
+        >Программы обучения ↗</NuxtLink
+      >
+      <NuxtLink class="button button--dark" to="/contacts">
         Связаться с кафедрой ↗
       </NuxtLink>
     </div>

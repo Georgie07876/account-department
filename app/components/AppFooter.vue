@@ -4,7 +4,7 @@ import { site } from "~/data/site";
 
 <template>
   <footer>
-    <div class="wrap footer-grid">
+    <div class="container footer__grid">
       <div>
         <strong>Кафедра бухгалтерского<br />учета и контроллинга</strong>
         <p>РГЭУ (РИНХ)<br />{{ site.faculty }}</p>
@@ -23,7 +23,7 @@ import { site } from "~/data/site";
         <NuxtLink to="/sources">Материалы и сведения о проекте</NuxtLink>
       </div>
     </div>
-    <div class="wrap footer-bottom">
+    <div class="container footer__bottom">
       <span>1931–2026 · Ростов-на-Дону</span>
       <span>Проект новой версии сайта · для рассмотрения кафедрой</span>
     </div>

@@ -17,24 +17,24 @@ useHead({ title: program.title });
 </script>
 
 <template>
-  <div v-if="program" class="wrap">
+  <div v-if="program" class="container">
     <div class="page-intro">
       <p class="eyebrow">
         {{ program.levelLabel }} · {{ program.code }} «{{ program.direction }}»
       </p>
       <h1>{{ program.title }}</h1>
-      <p class="lead">{{ program.lead }}</p>
+      <p class="page-intro__lead">{{ program.lead }}</p>
     </div>
-    <div class="detail-layout">
+    <div class="detail">
       <div>
         <h2>Тематический фокус</h2>
-        <ul class="clean-list">
+        <ul class="content-list">
           <li v-for="item in program.focus" :key="item">{{ item }}</li>
         </ul>
         <p class="note">
-          Краткое описание подготовлено для проекта сайта по названию
-          программы. Состав дисциплин, формы и сроки обучения определяются
-          утверждённым учебным планом.
+          Краткое описание подготовлено для проекта сайта по названию программы.
+          Состав дисциплин, формы и сроки обучения определяются утверждённым
+          учебным планом.
         </p>
         <h2>Профессиональное развитие</h2>
         <p>
@@ -61,7 +61,7 @@ useHead({ title: program.title });
           Актуальные правила приёма, вступительные испытания, стоимость и
           количество мест — на сайте университета.
         </p>
-        <a class="button dark" href="https://rsue.ru/abitur/">
+        <a class="button button--dark" href="https://rsue.ru/abitur/">
           Условия поступления <span aria-hidden="true">↗</span>
         </a>
         <hr />
