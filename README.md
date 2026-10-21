@@ -1,75 +1,38 @@
-# Nuxt Minimal Starter
+# Сайт кафедры бухгалтерского учета и контроллинга
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Сайт кафедры РГЭУ (РИНХ) на Nuxt 4, Vue 3 и TypeScript. В проекте есть страницы о кафедре, образовательных программах, научной работе, студентах, партнерах и истории. Содержание подготовлено по макету кафедры; перед официальным размещением его нужно согласовать с ответственными сотрудниками.
 
-## Setup
+## Запуск на компьютере
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Нужен Node.js с npm. В папке проекта выполните:
 
 ```bash
-# npm
+npm ci
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+После запуска откройте адрес, который напечатает Nuxt (обычно `http://localhost:3000`). Остановить сервер можно сочетанием `Ctrl+C`.
 
-Build the application for production:
+Для проверки собранной версии:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Где что находится
+
+- `app/pages/` — страницы сайта. Страница `programs/[slug].vue` показывает одну из шести программ.
+- `app/data/programs.ts` — названия и краткие описания программ.
+- `app/data/site.ts` — контакты и основное меню.
+- `app/components/AppHeader.vue` и `AppFooter.vue` — общие шапка и подвал.
+- `app/assets/css/main.css` — стили проекта.
+- `public/assets/` — изображения, `public/materials/` — юбилейный PDF.
+
+При добавлении страницы используйте существующие классы из `main.css`. Сведения о программах, преподавателях и партнерах сверяйте с утвержденными материалами кафедры перед публикацией.
+
+## Что нужно уточнить
+
+В разделе «Материалы и сведения о проекте» перечислены сведения, которые пока не подтверждены: часы приема, актуальные презентации и учебные планы программ, отдельные показатели научной работы, материалы студенческого кружка и статусы партнеров. Краткие темы на страницах программ не заменяют утвержденные учебные планы.
+
+Это самостоятельный проект сайта. Размещение на официальном домене университета и его интеграция с действующей страницей кафедры требуют отдельного решения со стороны университета.
