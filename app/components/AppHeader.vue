@@ -3,7 +3,7 @@ import { nav, site } from "~/data/site";
 
 const route = useRoute();
 const menuOpen = ref(false);
-const largeText = useState("large-text", () => false);
+const largeText = useLargeText();
 
 function isCurrent(path: string) {
   if (path === "/") return route.path === "/";

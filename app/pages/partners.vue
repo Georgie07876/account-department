@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "Партнёры и практика" });
+usePageMeta({
+  title: "Практика и партнёрство",
+  description:
+    "Работодатели, базовая кафедра и практика студентов кафедры бухгалтерского учета и контроллинга.",
+  path: "/partners",
+});
 </script>
 
 <template>

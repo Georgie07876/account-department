@@ -4,22 +4,30 @@ export default defineNuxtConfig({
   modules: ["@nuxt/eslint"],
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+  runtimeConfig: {
+    public: {
+      siteUrl: "",
+    },
+  },
   app: {
     head: {
       htmlAttrs: { lang: "ru" },
       titleTemplate: "%s — Кафедра бухгалтерского учета и контроллинга",
-      meta: [
-        {
-          name: "description",
-          content: "Кафедра бухгалтерского учета и контроллинга РГЭУ (РИНХ).",
-        },
-      ],
+    },
+  },
+  routeRules: {
+    "/**": {
+      headers: {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN",
+      },
     },
   },
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/"],
+      routes: ["/", "/sitemap.xml", "/robots.txt"],
     },
   },
 });

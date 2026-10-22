@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "Материалы и сведения о проекте" });
+usePageMeta({
+  title: "О проекте сайта",
+  description:
+    "Источники текстов и границы этой версии сайта кафедры бухгалтерского учета и контроллинга.",
+  path: "/sources",
+});
 </script>
 
 <template>

@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "Экосистема кафедры" });
+usePageMeta({
+  title: "Экосистема кафедры",
+  description:
+    "Образование, наука и партнёрство кафедры бухгалтерского учета и контроллинга как единая среда.",
+  path: "/ecosystem",
+});
 </script>
 
 <template>

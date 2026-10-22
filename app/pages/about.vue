@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "О кафедре" });
+usePageMeta({
+  title: "О кафедре",
+  description:
+    "Руководство, преподаватели и образовательная среда кафедры бухгалтерского учета и контроллинга РГЭУ (РИНХ).",
+  path: "/about",
+});
 </script>
 
 <template>

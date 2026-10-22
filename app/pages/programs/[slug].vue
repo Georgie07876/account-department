@@ -13,7 +13,11 @@ if (!program) {
   });
 }
 
-useHead({ title: program.title });
+usePageMeta({
+  title: program.title,
+  description: program.lead,
+  path: `/programs/${program.slug}`,
+});
 </script>
 
 <template>

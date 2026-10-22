@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "Контакты" });
+usePageMeta({
+  title: "Контакты кафедры",
+  description:
+    "Адрес, телефон и часы приёма кафедры бухгалтерского учета и контроллинга: Большая Садовая, 69, аудитория 509.",
+  path: "/contacts",
+});
 </script>
 
 <template>

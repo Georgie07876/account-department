@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "Образовательные программы" });
+usePageMeta({
+  title: "Наши программы",
+  description:
+    "Бакалавриат, магистратура и аспирантура кафедры бухгалтерского учета и контроллинга РГЭУ (РИНХ).",
+  path: "/programs",
+});
 </script>
 
 <template>

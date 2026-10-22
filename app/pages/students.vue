@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "Студентам" });
+usePageMeta({
+  title: "Студенческая жизнь",
+  description:
+    "Научный кружок, проекты и международная среда для студентов кафедры бухгалтерского учета и контроллинга.",
+  path: "/students",
+});
 </script>
 
 <template>

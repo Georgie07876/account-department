@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "95 лет кафедре" });
+usePageMeta({
+  title: "95 лет кафедре",
+  description:
+    "История кафедры бухгалтерского учета и контроллинга РГЭУ (РИНХ) с 1931 по 2026 год.",
+  path: "/history",
+});
 </script>
 
 <template>

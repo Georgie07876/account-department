@@ -1,5 +1,10 @@
 <script setup lang="ts">
-useHead({ title: "Научная жизнь" });
+usePageMeta({
+  title: "Научная жизнь",
+  description:
+    "Научная школа, публикации и исследования кафедры бухгалтерского учета и контроллинга РГЭУ (РИНХ).",
+  path: "/science",
+});
 </script>
 
 <template>

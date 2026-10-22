@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-const largeText = useState("large-text", () => false);
+const largeText = useLargeText();
 
 useHead({
   bodyAttrs: {
