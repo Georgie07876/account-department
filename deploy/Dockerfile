@@ -1,4 +1,4 @@
-FROM node:24-alpine AS build
+FROM node:24.22.1-alpine AS build
 
 WORKDIR /app
 ENV HUSKY=0
@@ -9,7 +9,7 @@ RUN npm ci --ignore-scripts
 COPY . .
 RUN npx nuxt prepare && npm run generate
 
-FROM nginx:1.27-alpine
+FROM nginx:1.30-alpine
 
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 COPY deploy/nginx-security-headers.conf /etc/nginx/snippets/security-headers.conf

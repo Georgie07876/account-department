@@ -4,6 +4,7 @@ stages:
 
 variables:
   HUSKY: "0"
+  NODE_VERSION: "24.22.1"
 
 test:
   stage: test
@@ -16,8 +17,8 @@ test:
         curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
       fi
       . "$NVM_DIR/nvm.sh"
-      nvm install 24
-      nvm use 24
+      nvm install "$NODE_VERSION"
+      nvm use "$NODE_VERSION"
       node -v
       npm -v
   script:

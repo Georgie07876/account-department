@@ -4,7 +4,7 @@
 
 ## Локальный запуск
 
-Нужен Node.js 24.15+ и npm. CI также использует Node.js 24.
+Нужен Node.js 24.22.1 и npm — версия закреплена точно в `.nvmrc`, в `engines` файла `package.json`, в CI (`NODE_VERSION`) и в `deploy/Dockerfile` (`node:24.22.1-alpine`). 24.22.1 — минимальная версия с исправлением CVE-2026-111497 (out-of-bounds write в Brotli-декодере, CVSS 9.8), ниже неё использовать нельзя. Следующий security-релиз Node поднимается вручную в этих четырёх местах.
 
 ```bash
 git clone https://github.com/Georgie07876/account-department.git
