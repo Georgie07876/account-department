@@ -19,6 +19,8 @@ test:
   tags: ["production"]
   rules:
     - if: $CI_COMMIT_BRANCH == "dev"
+      changes:
+        - web/**/*
   before_script:
     - |
       export NVM_DIR="$HOME/.nvm"
@@ -30,10 +32,12 @@ test:
       nvm use "$NODE_VERSION"
       node -v
       npm -v
+    - cd web
   script:
     - npm ci
     - npm run lint
     - npm run format:check
+    # На фазе 4.1 (см. PLAN.md) generate будет заменён на build (SSR)
     - npm run generate
 
 smoke:shell-lxc:
