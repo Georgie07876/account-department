@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" }],
       htmlAttrs: { lang: "ru" },
       titleTemplate: "%s — Кафедра бухгалтерского учета и контроллинга",
     },
