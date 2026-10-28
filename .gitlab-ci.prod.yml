@@ -11,5 +11,5 @@ deploy:
     - shell-lxc -N "$PROXMOX_NODE" -H "$CT_HOST" "docker compose --project-directory $PROJECT_PATH up -d web"
     - shell-lxc -N "$PROXMOX_NODE" -H "$CT_HOST" "docker inspect --format '{{.Image}}' \$(docker compose --project-directory $PROJECT_PATH ps -q web)"
     - sleep 3
-    - curl -fsS -o /dev/null -w 'root: %{http_code}\n' https://kafedra-bu.rsue.ru/
-    - curl -fsS -o /dev/null -w 'deep: %{http_code}\n' https://kafedra-bu.rsue.ru/programs/master-1/
+    - curl -fsS https://kafedra-bu.rsue.ru/ -o /dev/null && echo 'root: OK'
+    - curl -fsS https://kafedra-bu.rsue.ru/programs/master-1/ -o /dev/null && echo 'deep: OK'
