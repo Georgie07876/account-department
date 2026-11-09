@@ -23,12 +23,6 @@ logs
 .env.*
 !.env.example
 
-# Python / Django (api/)
-__pycache__/
-*.py[cod]
-.venv/
-api/db.sqlite3
-api/media/
-api/staticfiles/
-.pytest_cache/
-.mypy_cache/
+# Рабочие планы не храним в репозитории
+PLAN.md
+docs/*-plan.md
